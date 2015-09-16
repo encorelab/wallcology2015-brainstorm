@@ -11,20 +11,20 @@
     routes: {
       '' : 'index',
       'ben': 'initClassBen',
-      'michael': 'initClassMichael',
+      'mike': 'initClassMike',
       'test': 'initClassTest'
     },
     initialize: function() {
 
     },
     index: function() {
-      console.log("routing on");
+      console.log("routing on - you may need to specify a user in the URL");
     },
     initClassBen: function () {
       Skeletor.Smartboard.init('ben');
     },
-    initClassMichael: function () {
-      Skeletor.Smartboard.init('michael');
+    initClassMike: function () {
+      Skeletor.Smartboard.init('mike');
     },
     initClassTest: function () {
       Skeletor.Smartboard.init('test');

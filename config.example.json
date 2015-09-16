@@ -15,6 +15,6 @@
         "url": "http://pikachu.coati.encorelab.org/"
     },
     "login_picker": true,
-    "runs":["ben", "michael"],
+    "runs":["ben", "mike"],
     "project_name": "Wallcology 2015"
 }
