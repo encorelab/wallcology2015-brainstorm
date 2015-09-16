@@ -31,6 +31,7 @@
   app.runState = null;
   app.users = null;
   app.username = null;
+  app.tags = null;
 
   app.readView = null;
   app.writeView = null;
@@ -144,6 +145,11 @@
       app.runState = Skeletor.getState('RUN');
       app.runState.wake(app.config.wakeful.url);
       app.runState.on('change', app.reflectRunState);
+    })
+    .then(function() {
+      console.log('Tags model initialized - now waking up');
+      app.tags = Skeletor.Model.awake.tags;
+      app.tags.wake(app.config.wakeful.url);
     })
     .done(function () {
       ready();

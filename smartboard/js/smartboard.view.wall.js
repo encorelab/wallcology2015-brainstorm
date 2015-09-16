@@ -11,6 +11,8 @@
   Smartboard.View.Wall = Smartboard.View.Base.extend({
     initialize: function () {
       var wall = this;
+      // this.stopListening();
+      // this.undelegateEvents();
 
       _.bindAll(this);
 
@@ -27,7 +29,7 @@
       });
 
       Skeletor.Model.awake.brainstorms.on('destroy', function(n) {
-        console.warn("I was destoryed", n.id);
+        console.warn("I was destroyed", n.id);
         // wall.registerBalloon(n, Smartboard.View.NoteBalloon, wall.balloons);
       });
 
@@ -51,6 +53,13 @@
       Skeletor.Model.awake.tags.each(function(t) {
         wall.balloons[t.id].renderConnectors();
       });
+
+      // wall.balloons.each(function(el) {
+      //   el.destory();
+      // });
+      // _.each(wall.balloons, function(el) {
+      //   el.destroy();
+      // })
     },
 
     events: {
@@ -239,6 +248,10 @@
       return view.$el.on('dragstart', function(ev, ui) {
         return _this.moveBalloonToTop(doc, view);
       });
+    },
+
+    destroyAllBalloons: function() {
+
     },
 
     addTagFilter: function(tag) {

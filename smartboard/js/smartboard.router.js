@@ -18,7 +18,7 @@
 
     },
     index: function() {
-      console.log("routing on - you may need to specify a user in the URL");
+      console.log("routing on - you may need to specify a user in the URL with /#user");
     },
     initClassBen: function () {
       Skeletor.Smartboard.init('ben');
