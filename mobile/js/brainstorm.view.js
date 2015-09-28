@@ -18,10 +18,6 @@
       var view = this;
       console.log('Initializing WriteView...', view.el);
 
-      app.tags.on('add', function(tag) {
-        view.addTagButton(tag);
-      });
-
       // check if we need to resume any brainstorm note
       var brainstormToResume = view.collection.findWhere({author: app.username, published: false});
       if (brainstormToResume) {
@@ -143,25 +139,8 @@
       jQuery('#read-screen').removeClass('hidden');
     },
 
-    addTagButton: function(tag) {
-      var button = jQuery('<button class="btn theme-button btn-default btn-base" data-name="' + tag.get('name') + '">');
-      button.val(tag.get('name'));
-      button.text(tag.get('name'));
-      jQuery('#theme-container').append(button);
-    },
-
     render: function () {
-      var view = this;
       console.log("Rendering WriteView...");
-
-      jQuery('#theme-container').html('');
-      if (Skeletor.Model.awake.tags.length > 0) {
-        Skeletor.Model.awake.tags.each(function(tag) {
-          view.addTagButton(tag);
-        });
-      } else {
-        console.warn('Tags collection is empty!');
-      }
     }
   });
 
@@ -197,7 +176,6 @@
 
     switchToWriteView: function() {
       app.hideAllContainers();
-      app.writeView.render();
       jQuery('#write-screen').removeClass('hidden');
     },
 
