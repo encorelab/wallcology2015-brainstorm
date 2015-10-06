@@ -30,8 +30,8 @@
         "modified_at": "2015-03-25T19:09:00.000Z"
     },
     {
-        "username": "samuelB",
-        "display_name": "SamuelB",
+        "username": "samB",
+        "display_name": "SamB",
         "tags": [
             "mike"
         ],
@@ -120,8 +120,8 @@
         "modified_at": "2015-03-25T19:09:00.000Z"
     },
     {
-        "username": "samuelH",
-        "display_name": "SamuelH",
+        "username": "samH",
+        "display_name": "SamH",
         "tags": [
             "mike"
         ],
@@ -170,8 +170,8 @@
         "modified_at": "2015-03-25T19:09:00.000Z"
     },
     {
-        "username": "alexander",
-        "display_name": "Alexander",
+        "username": "alex",
+        "display_name": "Alex",
         "tags": [
             "mike"
         ],
@@ -190,8 +190,8 @@
         "modified_at": "2015-03-25T19:09:00.000Z"
     },
     {
-        "username": "sam",
-        "display_name": "Sam",
+        "username": "samR",
+        "display_name": "SamR",
         "tags": [
             "mike"
         ],
