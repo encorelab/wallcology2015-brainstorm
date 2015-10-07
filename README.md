@@ -6,4 +6,5 @@ This repo compromises the tools needed to facilitate the brainstorming part of t
 
 ## Dev notes
 To import scaffolding to local Mongo:
-    mongoimport -d wallcology2015 -c users --jsonArray scaffolding/pupils-ben.json
+    mongoimport -d wallcology2015-RUNNAME -c users --jsonArray scaffolding/pupils-ben.json
+    mongoimport -d wallcology2015-RUNNAME -c states --jsonArray scaffolding/state.json
