@@ -13,8 +13,8 @@
       'ben': 'initClassBen',
       'mike': 'initClassMike',
       'test': 'initClassTest',
-      'ben-board2': 'initBenBoard2',
-      'mike-board2': 'initMikeBoard2'
+      'benBoard2': 'initBenBoard2',
+      'mikeBoard2': 'initMikeBoard2'
     },
     initialize: function() {
 
