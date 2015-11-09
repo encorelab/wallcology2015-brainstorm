@@ -12,7 +12,9 @@
       '' : 'index',
       'ben': 'initClassBen',
       'mike': 'initClassMike',
-      'test': 'initClassTest'
+      'test': 'initClassTest',
+      'ben-board2': 'initBenBoard2',
+      'mike-board2': 'initMikeBoard2'
     },
     initialize: function() {
 
@@ -28,6 +30,12 @@
     },
     initClassTest: function () {
       Skeletor.Smartboard.init('test');
+    },
+    initBenBoard2: function () {
+      Skeletor.Smartboard.init('benBoard2');
+    },
+    initMikeBoard2: function () {
+      Skeletor.Smartboard.init('mikeBoard2');
     },
     start: function() {
       // to allow single page app with various routes
