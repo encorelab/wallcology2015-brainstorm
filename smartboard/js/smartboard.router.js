@@ -14,7 +14,10 @@
       'mike': 'initClassMike',
       'test': 'initClassTest',
       'benBoard2': 'initBenBoard2',
-      'mikeBoard2': 'initMikeBoard2'
+      'mikeBoard2': 'initMikeBoard2',
+      'serevetas1': 'initSerevetas1',
+      'serevetas2': 'initSerevetas2',
+      'serevetas3': 'initSerevetas3'
     },
     initialize: function() {
 
@@ -36,6 +39,15 @@
     },
     initMikeBoard2: function () {
       Skeletor.Smartboard.init('mikeBoard2');
+    },
+    initSerevetas1: function () {
+      Skeletor.Smartboard.init('serevetas1');
+    },
+    initSerevetas2: function () {
+      Skeletor.Smartboard.init('serevetas2');
+    },
+    initSerevetas3: function () {
+      Skeletor.Smartboard.init('serevetas3');
     },
     start: function() {
       // to allow single page app with various routes
